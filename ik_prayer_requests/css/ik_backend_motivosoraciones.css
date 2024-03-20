@@ -1,0 +1,126 @@
+/*
+Author: Gabriel Caroprese
+Update: 06/06/2022
+*/
+#ik_oracionf_agregar_motivos, #ik_oracionf_motivos_existentes {
+    padding: 1%;
+}
+#ik_oracionf_motivos_existentes p.search-box {
+    padding-right: 3px;
+    padding-bottom: 28px;
+    float: right;
+    margin: 0;
+}
+table#ik_oracionf_datos_cargados {
+    width: 100%;
+}
+.ik_oracionf_paginas {
+    display: block;
+    margin: 20px 0;
+}
+.ik_oracionf_paginas a.actual_pagina {
+    background: #2271b1;
+    color: #fff;
+}
+.ik_oracionf_paginas a {
+    padding: 5px 12px;
+    margin: 3px;
+    text-decoration: none;
+    background: #fff;
+    font-size: 15px;
+}
+.ik_oracionf_campos input, .ik_oracionf_campos textarea, .ik_oracionf_campos select {
+    width: 177px;
+}
+#ik_oracionf_datos_cargados .ik_oracionf_motivo div{
+    max-height: 112px;
+    overflow: hidden;
+}
+#ik_oracionf_agregar_motivos textarea {
+    width: 178px;
+    height: 70px;
+}
+#ik_oracionf_agregar_motivos h4 {
+    margin: 1.33em 0;
+    margin: 1.33em 3px 5px;
+}
+#ik_oracionf_agregar_motivos h1{
+    line-height: 1em;
+}
+#ik_oracionf_datos_cargados thead tr, #ik_oracionf_datos_cargados tfoot tr {
+    background: #fff;
+}
+#ik_oracionf_datos_cargados th, #ik_oracionf_datos_cargados td {
+    padding: 11px! important;
+    text-align: center;
+}
+#ik_oracionf_datos_cargados th.conorden{
+    cursor: pointer;
+}
+#ik_oracionf_datos_cargados .ik_oracionf_estado, #ik_oracionf_edicion_dinamica_dato .ik_oracionf_editar_estado{
+    text-transform: capitalize;
+}
+#ik_oracionf_datos_cargados tr th:last-child, #ik_oracionf_datos_cargados tr td:last-child {
+    width: 215px;
+}
+#ik_oracionf_datos_cargados tbody tr:nth-child(2n+1) {
+    background: #eee;
+}
+#ik_oracionf_datos_cargados tbody tr:nth-child(2n+2) {
+    background: #ddd;
+}
+#ik_oracionf_datos_cargados tr td:first-child {
+    border-left-width: 0px;
+}
+#ik_oracionf_datos_cargados tr td {
+    border-left: 1px solid #fff;
+}
+#ik_oracionf_edicion_dinamica_dato input, #ik_oracionf_edicion_dinamica_dato select, #ik_oracionf_edicion_dinamica_dato textarea {
+    margin: 0 1px;
+    padding: 6px 12px;
+    width: 100%;
+    text-align: center;
+	max-width:300px;
+    border-radius: 12px! important;
+    border: 1px solid #ccc;
+}
+#ik_oracionf_datos_cargados .sorting-indicator {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: 0;
+    float: right;
+    margin-left: 0;
+    margin-right: 2%;
+    position: relative;
+}
+#ik_oracionf_datos_cargados .sorting-indicator:before{
+    top: 6px;
+}
+#ik_oracionf_datos_cargados th:hover .sorting-indicator{
+    visibility: visible! important;
+}
+#ik_oracionf_panel_config input[type=email], #ik_oracionf_panel_config input[type=text], #ik_oracionf_panel_config input[type=tel], #ik_oracionf_panel_config input[type=password] {
+    width: 220px;
+}
+@media (min-width: 767px){
+    #ik_oracionf_agregar_motivos, #ik_oracionf_motivos_existentes {
+        float: left;
+        max-width: 70%;
+    }
+    #ik_oracionf_agregar_motivos {
+        width: 25%;
+    }
+}
+@media (max-width: 767px){
+    #ik_oracionf_motivos_existentes .ik_oracionf_estado, #ik_oracionf_motivos_existentes .ik_oracionf_nombre, #ik_oracionf_motivos_existentes .solodesktop{
+        display: none;
+    }
+    table#ik_oracionf_datos_cargados {
+        display: inline-table;
+        margin-top: 50px;
+    }
+	#ik_oracionf_datos_cargados th, #ik_oracionf_datos_cargados td {
+		padding: 7px! important;
+	}
+}
